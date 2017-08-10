@@ -1,0 +1,795 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding-top: 50px;
+	width: 100%;
+	height: 100vh;
+}
+
+.parallax-window {
+	overflow-y:auto;
+    background: transparent;
+    z-index: 1;
+}
+
+.backColor{
+    background: transparent;
+    z-index: 1;
+    background-color: #E6E6E6;
+}
+
+
+/*************************************************************
+NAVIGATION BAR SECTION
+*************************************************************/
+.navbar {
+	background-color: black;
+	text-align: center;
+}
+
+.navbar .nav {
+	float: none;
+
+}
+
+ul.nav {
+	display: inline-block;
+	font-size: 1.4em;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;	
+	text-decoration: none;
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.nav a {
+	color: #04B45F;
+}
+
+.navbar-toggle .icon-bar{
+	background-color: white;
+}
+
+.navbar-collapse .in{
+	border: none;
+}
+
+
+@media(max-width:768px) {
+	.nav li {
+		display: block;
+	}	
+}
+
+/*************************************************************
+SECTION FOR THE EDGE BORDERS
+*************************************************************/
+#bottom, #left, #right {
+	background: #000000;
+	z-index: 3;
+}
+
+#left, #right {
+	position: fixed;	
+	top: 0; bottom: 0;
+	width: 20px;
+}
+
+#left { 
+	left: 0; 
+}
+
+#right { 
+	right: 0; 
+}
+
+#bottom {
+	left: 0; 
+	right: 0;
+	bottom: 0; 
+	height: 45px;
+}
+
+#copyright{
+	padding-top: 13px;
+}
+
+@media (max-width: 480px) {
+	#left, #right {
+		width: 10px;
+	}
+}
+
+/*************************************************************
+MAIN PAGE SECTION
+*************************************************************/
+.mainpage {
+    width: 100%;
+    height: 100vh;	
+	text-align: center;  /*puts the mainList in center of page*/
+}
+
+.nameHeading {
+	position: relative;
+	padding-top: 1%;
+}
+
+.mainpage .myname {
+	display: block;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 4em;
+}
+
+#first, #middle, #last {
+	color: #FFFFFF;
+}
+
+.mainList {
+	color: #FFFFFF;
+	display: inline-block;  /*put the list in an inline block*/
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform: uppercase;	
+	margin-top: 150px;
+	z-index: 2;
+	font-size: 2em;
+	padding-left: -50px;
+}
+
+.mainList .horizontal {
+	display: inline;
+	text-align: left;
+	border-left: 2px solid;
+	padding-left: 0.3em;
+	z-index: 2;
+}
+
+.mainList .first {
+	border-left: none;
+}
+
+/* main page media */
+
+@media only screen and (max-width: 320px) {
+	.mainpage .nameHeading {
+		text-align: center;
+		padding-top: 30%;
+	}
+	.mainpage .nameHeading {
+		display: inline-block;
+	}
+	.mainpage .nameHeading .myname {
+		font-size: 4em;
+	}
+
+	.mainpage .mainList {
+		font-size: 1em;
+		margin-top:20%;
+	}	
+}
+@media only screen and (min-width: 321px) and (max-width: 411px) {
+	.mainpage .nameHeading {
+		text-align: center;
+		padding-top: 30%;
+	}
+	.mainpage .nameHeading {
+		display: inline-block;
+	}
+	.mainpage .nameHeading .myname {
+		font-size: 4em;
+	}
+
+	.mainpage .mainList {
+		font-size: 1.2em;
+		margin-top:20%;
+	}	
+}
+
+@media only screen and (min-width: 412px) and (max-width: 767px) {
+	.mainpage .nameHeading {
+		text-align: center;
+		padding-top:26%;
+	}
+
+	.mainpage .nameHeading .myname {
+		font-size: 4em;
+	}
+
+	.mainpage .mainList {
+		font-size: 1.3em;
+		margin-top:20%;
+	}	
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px)  and (orientation: portrait) {
+	.mainpage .nameHeading {
+		text-align: center;
+		padding-top: 30%;
+	}
+
+	.mainpage .nameHeading .myname {
+		font-size: 4em;
+	}
+
+	.mainpage .mainList {
+		font-size: 1.3em;
+		margin-top:20%;
+	}	
+}
+
+@media only screen and (min-width: 568px) and (max-width: 736px)  and (orientation: landscape) {
+	.mainpage .nameHeading {
+		text-align: center;
+	}
+
+	.mainpage .nameHeading .myname {
+		font-size: 4em;
+	}
+
+	.mainpage .mainList {
+		font-size: 1.3em;
+		margin-top:20%;
+	}	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+ 	.mainpage {
+		height: 100vh;
+		padding: 0;
+	}	
+
+	.mainpage .nameHeading {
+		padding-top:20%;
+	}
+
+	.mainpage .nameHeading .myname {
+		display: inline;
+		font-size: 4em;
+	}
+
+	.mainpage .mainList {
+		margin-top:20%;
+		font-size: 2em;
+	}
+}
+@media only screen and (min-width: 961px) and (max-width: 1023px) {
+	.mainpage {
+		height: 100vh;
+		padding: 0;
+	}	
+
+	.mainpage .nameHeading {
+		padding-top:16%;
+	}
+
+	.mainpage .nameHeading .myname {
+		display: inline;
+		font-size: 6em;
+	}
+
+	.mainpage .mainList {
+		margin-top:20%;
+		font-size: 2em;
+	}
+}
+
+@media(min-width: 1024px) {
+	.mainpage {
+		height: 100vh;
+		padding: 0;
+	}	
+
+	.mainpage .nameHeading {
+		padding-top:13%;
+	}
+
+	.mainpage .nameHeading .myname {
+		display: inline;
+		font-size: 6em;
+	}
+
+	.mainpage .mainList {
+		margin-top: 15%;
+		font-size: 3em;
+	}
+}
+
+/*************************************************************
+MY PROJECTS SECTION
+*************************************************************/
+#myProjects {
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: #000000;
+	font-weight: 900;
+	font-size: 4em;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	display: block;
+}
+
+#projects {
+	background-color: #d9d9d9;
+	padding-top: 3%;
+	padding-bottom: 6%;
+}
+
+.portfolio-item {
+	padding: 30px;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.43);
+}
+
+.portfolio-item span {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.portfolio-item span img {
+    margin: 0 auto;
+}
+
+.portfolio-item h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    position: relative;
+}
+
+.portfolio-item p {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    position: relative;
+    padding-top: 1%;
+}
+
+.portfolio-item h3:after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    width: 10%;
+    height: 2px;
+    margin: 0 auto;
+    background: #04B45F;
+    content: '';
+}
+
+#imgCell {
+	/*use if no sliding caption*/
+	filter: none;
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+}
+
+/* grayscaling is for turning black and white*/
+#imgCell:hover {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+}
+
+@media (max-width: 480px) {
+	#myProjects {	
+		font-size: 3.5em;		
+	}
+	#projects { 
+		padding-top: 5%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.portfolio-item  {
+		
+	}
+}
+
+
+/*************************************************************
+SKILL SECTION
+*************************************************************/
+#skills {
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+.bigSkills {
+	padding-top: 3%;
+	font-size: 4em;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;	
+}
+
+.web-skill-list  {
+	padding: 6% 5% 5% 5%;
+}
+
+.service-wrapper {
+	border: 2px solid #04B45F;
+}
+
+.web-skill-list .icon {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+  margin-top: -50px;
+}
+
+.web-skill-list .icon span {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background: #eee;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.web-skill-list .icon span i {
+  width: 100px;
+  height: 100px;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 40px;
+  color: #000;
+}
+
+.web-skill-list h2 {
+	padding-bottom: 1%;
+	font-weight: 700;
+	text-transform: uppercase;	
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;	
+}
+
+.web-skill-list h2:after {
+    position: relative;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    width: 10%;
+    height: 2px;
+    margin: 0 auto;
+    background: #04B45F;
+    content: '';
+}
+
+.web-skill-list ul {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.web-skill-list li {
+	text-decoration: none;
+	font-size: 1.3em;
+	font-variant: small-caps;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;		
+}
+
+.web-skill-list li:hover {
+	font-weight: 700px;
+	-webkit-transform(-2deg);
+  	-moz-transform(-2deg);
+  	-ms-transform(-2deg);
+  	-o-transform(-2deg);
+	transform: rotate(-4deg);
+}
+
+@media only screen and (max-width: 320px) {
+	.bigSkills {
+		font-size: 3.5em;
+	}
+}
+@media (max-width: 480px) {
+	.web-skill-list  {
+		padding: 20% 5% 2% 5%;
+	}
+	#skills {
+		padding-bottom: 10%;
+	}
+	.web-skill-list li {
+		font-size: 1.2em;		
+	}
+}
+
+/*************************************************************
+ABOUT ME SECTION
+*************************************************************/
+.parallax-window #aboutpage {
+    width: 100%;
+    height: auto;
+	text-align: center; 
+	padding-top: 2%;
+}
+
+.parallax-window #aboutpage aside {
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.parallax-window #aboutpage aside img {
+	margin: 0 auto;
+	border-radius: 10%;
+	border: 2px solid #04B45F;
+}
+
+.parallax-window article {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.parallax-window article h2 {
+	color: white;
+	text-align: center;
+	font-size: 4em;	
+	font-weight: 900;
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.parallax-window article #tech-skills {
+	color: white;
+	text-align: center;
+	font-size: 3.4em;	
+	font-weight: 900;
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.parallax-window article p {
+	margin: 0 auto;
+	padding-top: 1%;
+	width: 80%;
+	color: white;
+	font-family: sans-serif;
+	font-size: 1.3em;
+	overflow: hidden;
+}
+
+.parallax-window article ul {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.parallax-window article li {
+	text-decoration: none;
+	color: white;
+	font-size: 1.3em;
+	font-variant: small-caps;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;		
+}
+
+/* about media query */
+@media only screen and (max-width: 768px) {
+	.parallax-window article h2 {
+		font-size: 3.5em;
+	}
+	.parallax-window article #tech-skills {
+		font-size: 3em;
+	}
+	.parallax-window article p {
+		margin: auto;
+		padding-top: 4%;
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+.parallax-window article h2 {
+		font-size: 3em;
+	}
+	.parallax-window article #tech-skills {
+		font-size: 1.7em;
+	}
+	.parallax-window article li {
+		font-size: 1em;
+	}
+	.parallax-window article p {
+		margin: auto;
+		padding-top: 4%;
+		width: 90%;
+	}
+	.parallax-window #aboutpage {
+		padding-top: 4%;
+		padding-bottom: 4%;
+	}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 479px) {
+	.parallax-window article h2 {
+		font-size: 3.5em;
+	}
+	.parallax-window article #tech-skills {
+		font-size: 1.9em;
+	}
+	.parallax-window article p {
+		margin: auto;
+		padding-top: 4%;
+		width: 90%;
+	}
+	.parallax-window #aboutpage {
+		padding-top: 4%;
+		padding-bottom: 4%;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+	.parallax-window article h2 {
+		font-size: 3.5em;
+	}
+	.parallax-window article #tech-skills {
+		font-size: 2.2em;
+	}
+	.parallax-window article p {
+		margin: auto;
+		padding-top: 4%;
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+	.parallax-window article h2 {
+		font-size: 3.5em;
+	}
+	.parallax-window article p {
+		margin: auto;
+		padding-top: 4%;
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.parallax-window article h2 {
+		font-size: 3.5em;
+	}
+	.parallax-window article p {
+		margin: auto;
+		padding-top: 4%;
+		width: 90%;
+	}
+}
+
+
+/*************************************************************
+CONTACT SECTION
+*************************************************************/
+
+h1.bigContact {
+	padding-top: 10%;
+	padding-bottom: 6%;
+	font-size: 4em;	
+	font-weight: 900;
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+.contact-section {
+	padding-bottom: 10%;
+}
+
+p.contactMe {
+	font-family: sans-serif;
+	font-size: 1.3em;
+	padding-bottom: 20px;
+}
+
+.fa-envelope-o {
+	color: #04B45F;
+}
+
+span.emailText {
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+	font-size: 1.4em;
+	color: #04B45F;
+}
+
+.email-btn {
+	padding-bottom: 20px;
+}
+
+.btn-cust:hover,
+.btn-cust:focus {
+  	-webkit-transform: scale(1.1);
+  	-moz-transform: scale(1.1);
+  	-ms-transform: scale(1.1);
+  	-o-transform: scale(1.1);
+  	transform: scale(1.1);    
+}
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+.btn {
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.btn-default {
+    border: 1px solid #04B45F;
+    color: #04B45F;
+    background-color: transparent;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    border: 1px solid #04B45F;
+    outline: 0;
+    color: #000;
+    background-color: #04B45F;
+  	-webkit-transform: scale(1.1);
+  	-moz-transform: scale(1.1);
+  	-ms-transform: scale(1.1);
+  	-o-transform: scale(1.1);
+  	transform: scale(1.1);    
+}
+
+@media (max-width: 320px) {
+	h1.bigContact {
+		font-size: 2.8em;		
+	}
+	.contact-section {
+		padding-bottom: 1%;
+	}
+	ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 100px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 100px;
+    }
+    h1.bigContact {
+		font-size: 3.2em;		
+	}
+    p.contactMe {
+    	margin-right: 20px;
+    	margin-left: 20px;
+    }
+    .contact-section {
+		padding-bottom: 1%;
+	}	
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+    p.contactMe {
+    	margin-right: 20px;
+    	margin-left: 20px;
+    }
+}
+
